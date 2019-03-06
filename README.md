@@ -37,4 +37,10 @@ Now using above run in the elevated cmd prompt
 ```
 netsh http add sslcert ipport=0.0.0.0:443 certhash=HASH_FROM_ABOVE appid="{GUID_FROM_ABOVE}"  
 ```
+
+## Update hosts file
+```
+127.0.0.1 mystuff.local
+127.0.0.1 localhost
+```
 And that's it. Now you can run IISExpress safety on https://mystuff.local/. Happy coding.
